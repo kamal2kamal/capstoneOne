@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS = 'dockerhub-auth' // ID of credentials stored in Jenkins
+        DOCKERHUB_CREDENTIALS = 'b461a2a7-cf9f-42e1-b24b-03e13a10c5b6' // ID of credentials stored in Jenkins
         APP_NAME = 'my-node-app'
         DOCKER_USER = 'kamalkolisetty'
     }

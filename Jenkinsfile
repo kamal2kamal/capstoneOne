@@ -37,7 +37,7 @@ pipeline {
             steps {
                 // For local Docker Desktop testing, we just restart the container
                 sh "docker stop ${APP_NAME} || true && docker rm ${APP_NAME} || true"
-                sh "docker run -d --name ${APP_NAME} -p 8080:3000 ${DOCKER_USER}/${APP_NAME}:latest"
+                sh "docker run -d --name ${APP_NAME} -p 5001:3000 ${DOCKER_USER}/${APP_NAME}:latest"
             }
         }
     }

@@ -3,4 +3,5 @@ WORKDIR /app
 COPY /app.js /app
 #sarada ala  malli
 EXPOSE 3000
-CMD ["node", "app.js"]
+ENTRYPOINT ["node"]
+CMD ["app.js"]
